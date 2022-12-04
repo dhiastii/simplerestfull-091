@@ -1,0 +1,13 @@
+package atmwsc.wscrestful;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class WscrestfulApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(WscrestfulApplication.class, args);
+	}
+
+}
