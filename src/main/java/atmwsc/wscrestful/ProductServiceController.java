@@ -54,11 +54,12 @@ public class ProductServiceController {
        if(!productRepo.containsKey(id)){
             return new ResponseEntity<>("Id Product belum ada, silakan edit Id yang sudah ada!", HttpStatus.NOT_FOUND);
        }
-       
+       else{
        productRepo.remove(id);
             product.setId(id);
             productRepo.put(id, product);
             return new ResponseEntity<>("Product is updated successsfully", HttpStatus.OK);
+       }
     }   
    
    @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
