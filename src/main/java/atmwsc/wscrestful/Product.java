@@ -8,12 +8,14 @@ package atmwsc.wscrestful;
  *
  * @author DELL
  */
+//membuat class untuk variabel yang dijadikan kolom
 public class Product {
     private String id;
     private String name;
     private String jumlah;
     private String harga;
 
+//generate code getter and setter
     public String getJumlah() {
         return jumlah;
     }
