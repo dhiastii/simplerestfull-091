@@ -10,7 +10,25 @@ package atmwsc.wscrestful;
  */
 public class Product {
     private String id;
-    public String name;
+    private String name;
+    private String jumlah;
+    private String harga;
+
+    public String getJumlah() {
+        return jumlah;
+    }
+
+    public void setJumlah(String jumlah) {
+        this.jumlah = jumlah;
+    }
+
+    public String getHarga() {
+        return harga;
+    }
+
+    public void setHarga(String harga) {
+        this.harga = harga;
+    }
 
     public String getId() {
         return id;
