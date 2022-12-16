@@ -22,7 +22,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductServiceController {
    private static Map<String, Product> productRepo = new HashMap<>();
    static{
+       //memanggil class product
         Product honey = new Product();
+        //memanggil variabel pada class product
         honey.setId("1");
         honey.setName("Honey");
         honey.setJumlah("20");
