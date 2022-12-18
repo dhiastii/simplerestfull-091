@@ -60,6 +60,7 @@ public class ProductServiceController {
         }    
    }
 
+   //membuat code untuk mengedit data (id sudah ada) dengan PUT
    @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
    public ResponseEntity<Object> updateProduct(@PathVariable("id") String id, @RequestBody Product product) { 
        if(!productRepo.containsKey(id)){
