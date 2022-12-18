@@ -31,7 +31,10 @@ public class ProductServiceController {
         honey.setHarga("20000");
         productRepo.put(honey.getId(), honey);
    
+        
+       //memanggil class product
         Product almond = new Product();
+        //memanggil variabel pada class product
         almond.setId("2");
         almond.setName("Almond");
         almond.setJumlah("10");
@@ -39,6 +42,7 @@ public class ProductServiceController {
         productRepo.put(almond.getId(), almond);
    }
    
+   //membuat code untuk menampilkan variabel dengan GET
    @RequestMapping(value = "/products")
    public ResponseEntity<Object> getProduct() {
       return new ResponseEntity<>(productRepo.values(), HttpStatus.OK);
