@@ -74,6 +74,7 @@ public class ProductServiceController {
        }
     }   
    
+   //membuat code untuk menghapus data yang ada dengan DELETE
    @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
    public ResponseEntity<Object> delete(@PathVariable("id") String id) { 
       productRepo.remove(id);
